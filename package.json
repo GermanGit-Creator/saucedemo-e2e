@@ -1,0 +1,18 @@
+{
+  "name": "saucedemo-e2e",
+  "version": "1.0.0",
+  "description": "Pruebas E2E con Playwright para Sauce Demo – QASE SD-3",
+  "scripts": {
+    "test":             "playwright test",
+    "test:headed":      "playwright test --headed",
+    "test:ui":          "playwright test --ui",
+    "test:debug":       "playwright test --debug",
+    "test:qase":        "QASE_MODE=testops playwright test",
+    "report":           "playwright show-report",
+    "install:browsers": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "playwright-qase-reporter": "^2.1.4"
+  }
+}
